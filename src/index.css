@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Prompt);
+*{
+    font-family: Prompt;
+    margin: 0 ;
+    box-sizing: border-box; 
+    text-align: center;
+}
+body{
+    background-color: bisque;
+}
+h1{
+    font-size: 4rem;
+}
+button{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5 ease;
+}
+.input{
+    margin-top: 50px;
+}
+.to-do-list{
+    margin-top: 200px;
+}
+.add-button{
+    background-color: blueviolet;
+    transition: 1 ease;
+}
+.add-button:hover{
+    background-color: white;
+    color: blueviolet;
+    transition: 1 ease;
+}
+.delete-button{
+    background-color: red;
+}
+.movebutton-up,
+.movebutton-down{
+    background-color: pink;
+}
+input[type="text"]{
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+ol{
+    padding: 0;
+}
+li{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 3px solid crimson;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.text{
+    flex:1;
+}
+.delete-button,
+.movebutton-up,
+.movebutton-down{
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
