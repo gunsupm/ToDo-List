@@ -49,3 +49,21 @@ def delete_task(id):
   except Exception as e:
     db.session.rollback()
     return jsonify({"error":str(e)}), 500
+  
+@app.route("/api/tasks/<int:id>",methods=["PATCH"])
+def update_task(id):
+  try:
+    task = Task.query.get(id)
+    if task is None:
+      return jsonify({"error":"Task not found"}), 404
+    
+    data = request.json
+
+    task.name = data.get("name")
+    task.completed = data.get("completed")
+
+    db.session.commit()
+    return jsonify(task.to_json()),200
+  except Exception as e:
+    db.session.rollback()
+    return jsonify({"error":str(e)}),500
