@@ -63,12 +63,12 @@ You can access the live demo of the ToDo List app hosted on GitHub Pages here:
 ### Running the Application
 Ensure both the front-end and back-end servers are running:
 
-Front-End: http://localhost:3000
-Back-End: http://localhost:5000
+   Front-End: http://localhost:3000
+   Back-End: http://localhost:5000
 You can now interact with the ToDo List application by adding, updating, and deleting tasks.
 
 Project Status
-Front-End: Complete and deployed on GitHub Pages
-Back-End: Complete and functional *Waiting for Deploy
+   Front-End: Complete and deployed on GitHub Pages
+   Back-End: Complete and functional *Waiting for Deploy
 
 
