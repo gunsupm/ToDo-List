@@ -22,14 +22,15 @@ def create_task():
         return jsonify({"error":f'Missing required field: {field}'}), 400
 
     name = data.get("name")
-    completed = data.get("completed")
+    completed = data.get("completed", False)
 
     new_task = Task(name=name, completed=completed)
 
     db.session.add(new_task)   
     db.session.commit()
 
-    return jsonify({"msg": "Task create success"}), 201
+    return jsonify(new_task.to_json()), 201
+
 
     
   except Exception as e:

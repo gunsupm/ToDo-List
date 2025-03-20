@@ -6,11 +6,39 @@
     text-align: center;
 }
 body{
-    background-color: gray;
+    background-color: rgb(221, 221, 221);
 }
 h1{
     font-size: 4rem;
-    color: blue;
+    color: white;
+    text-shadow: 
+       /* first layer at 1px */
+       -1px -1px 0px #000,
+       0px -1px 0px #000,
+       1px -1px 0px #000,
+      -1px  0px 0px #000,
+       1px  0px 0px #000,
+      -1px  1px 0px #000,
+       0px  1px 0px #000,
+       1px  1px 0px #000,
+      /* second layer at 2px */
+      -2px -2px 0px #000,
+      -1px -2px 0px #000,
+       0px -2px 0px #000,
+       1px -2px 0px #000,
+       2px -2px 0px #000,
+       2px -1px 0px #000,
+       2px  0px 0px #000,
+       2px  1px 0px #000,
+       2px  2px 0px #000,
+       1px  2px 0px #000,
+       0px  2px 0px #000,
+      -1px  2px 0px #000,
+      -2px  2px 0px #000,
+      -2px  1px 0px #000,
+      -2px  0px 0px #000,
+      -2px -1px 0px #000;
+    letter-spacing: 10px;
 }
 button{
     font-size: 1.7rem;
@@ -40,9 +68,11 @@ button{
 .delete-button{
     background-color: red;
 }
-.movebutton-up,
-.movebutton-down{
-    background-color: pink;
+.edit-button{
+    background-color: rgb(255, 208, 0);
+}
+.completed-button{
+    background-color: rgb(29, 143, 44);
 }
 input[type="text"]{
     font-size: 1.6rem;
@@ -59,10 +89,10 @@ ol{
 li{
     font-size: 2rem;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px;
     background-color: white;
     margin-bottom: 10px;
-    border: 3px solid crimson;
+    border: 3px solid black;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -71,9 +101,49 @@ li{
     flex:1;
 }
 .delete-button,
-.movebutton-up,
-.movebutton-down{
+.edit-button,
+.completed-button{
     padding: 8px 12px;
     font-size: 1.4rem;
     margin-left: 10px;
 }
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .save {
+    background-color: green; /* สีพื้นหลังของปุ่ม Save */
+    color: white;            /* สีตัวอักษร */
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin: 0 5px;
+  }
+  
+  .canclebtn {
+    background-color: aqua;
+    color: white;           
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin: 0 5px;
+  }
+  
+  
