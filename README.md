@@ -43,7 +43,6 @@ npm start
 python -m venv venv
 
 3. Activate the virtual environment:
-
 - On Window:
 ```bash
   venv\Scripts\activate
