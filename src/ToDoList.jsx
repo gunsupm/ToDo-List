@@ -169,7 +169,7 @@ const saveEditedTask = async () => {
           <li key={task.id}>
             <span className="text">{task.name}</span>
             <button className="completed-button" onClick={() => toggleTaskCompleted(task)}>
-            {task.completed ? "" : "✔"}
+            {task.completed ? "✔" : "✖"}
             </button>
             <button className="edit-button" onClick={() => openEditModal(task)}>
               Edit
