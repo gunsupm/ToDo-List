@@ -31,7 +31,8 @@ You can access the live demo of the ToDo List app hosted on GitHub Pages here:
    ```bash
    npm install
 3. Start the development server:
-npm start
+   ```bash
+   npm start
 
 ### Back-End Setup (Python Flask)
 1. Clone the repository:
@@ -39,21 +40,21 @@ npm start
    git clone https://github.com/gunsupm/ToDo.git
    cd ToDo/backend
 2. Create a virtual environment: 
-```bash
-python -m venv venv
+   ```bash
+   python -m venv venv
 
 3. Activate the virtual environment:
 - On Window:
-```bash
+   ```bash
   venv\Scripts\activate
 
 - On MacOs/Linux:
-```bash
+   ```bash
   source venv/bin/activate
 
 4. Install required dependencies:
-```bash
-pip install flask flask-alchemy flask-cors
+   ```bash
+   pip install flask flask-alchemy flask-cors
 
 5. Run Flask application:
   flask run
