@@ -27,6 +27,8 @@ You can access the live demo of the ToDo List app hosted on GitHub Pages here:
    ```bash
    git clone https://github.com/gunsupm/ToDo.git
    cd ToDo
+
+#### Or Dowload All flie
 2. Install dependencies:
    ```bash
    npm install
