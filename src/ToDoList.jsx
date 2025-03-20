@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function ToDoList() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
+
+  useEffect(() => {
+    fetch('/api/tasks')
+  }
+)
 
   function handleInputChange(event) {
     setNewTask(event.target.value);
@@ -61,10 +66,10 @@ function ToDoList() {
               Delete
             </button>
             <button className="movebutton-up" onClick={() => moveTaskUp(index)}>
-              🢁
+              UP
             </button>
             <button className="movebutton-down" onClick={() => moveTaskDown(index)}>
-              🢃
+              DOWN
             </button>
           </li>
         ))}
