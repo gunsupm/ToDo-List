@@ -7,7 +7,7 @@ from models import Task
 @app.route("/api/tasks",methods=["GET"])
 def get_task():
     tasks = Task.query.all()
-    result = [task.to_json() for task in tasks ]
+    result = [task.to_json() for task in tasks]
     return jsonify(result)
 
 # Create a task
@@ -18,19 +18,34 @@ def create_task():
 
     required_fields = ["name","completed"]
     for field in required_fields:
-      if field not in data or not data.get(field):
+      if field not in data:
         return jsonify({"error":f'Missing required field: {field}'}), 400
 
     name = data.get("name")
     completed = data.get("completed")
 
-    new_friend = Friend(name=name, completed=completed)
+    new_task = Task(name=name, completed=completed)
 
-    db.session.add(new_friend) 
+    db.session.add(new_task)   
     db.session.commit()
 
-    return jsonify(new_friend.to_json()), 201
+    return jsonify({"msg": "Task create success"}), 201
+
     
+  except Exception as e:
+    db.session.rollback()
+    return jsonify({"error":str(e)}), 500
+  
+@app.route("/api/tasks/<int:id>",methods=["DELETE"])
+def delete_task(id):
+  try:
+    task = Task.query.get(id)
+    if task is None :
+      return jsonify({"error":f"Task not found "}), 404
+    
+    db.session.delete(task)   
+    db.session.commit()
+    return jsonify({"msg": "Task DELETED"}), 200
   except Exception as e:
     db.session.rollback()
     return jsonify({"error":str(e)}), 500
