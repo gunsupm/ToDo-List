@@ -39,14 +39,22 @@ npm start
    git clone https://github.com/gunsupm/ToDo.git
    cd ToDo/backend
 2. Create a virtual environment: 
+```bash
 python -m venv venv
 3. Activate the virtual environment:
+
 - On Window:
+```bash
   venv\Scripts\activate
+
 - On MacOs/Linux:
+```bash
   source venv/bin/activate
+
 4. Install required dependencies:
+```bash
 pip install flask flask-alchemy flask-cors
+
 5. Run Flask application:
   flask run
 Running the Application
