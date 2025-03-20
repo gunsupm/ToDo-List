@@ -57,7 +57,8 @@ You can access the live demo of the ToDo List app hosted on GitHub Pages here:
    pip install flask flask-alchemy flask-cors
 
 5. Run Flask application:
-  flask run
+   ```bash
+   flask run
 
 ### Running the Application
 Ensure both the front-end and back-end servers are running:
