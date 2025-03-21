@@ -31,7 +31,6 @@ This repository contains the **gh-pages** branch, which hosts the production-rea
    npm install
 
 (If npm error, try this in Windows PowerShell)
-   ```powershell
    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 3. Start the development server:
