@@ -60,7 +60,7 @@ If npm error, try this in Windows PowerShell:
 
 4. Install required dependencies:
    ```bash
-   pip install flask flask-alchemy flask-cors
+   pip install flask flask-sqlalchemy flask-cors
 
 5. Run Flask application:
    ```bash
