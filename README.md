@@ -30,7 +30,7 @@ This repository contains the **gh-pages** branch, which hosts the production-rea
    ```bash
    npm install
 
-### If error, try this in Windows PowerShell:
+(If npm error, try this in Windows PowerShell)
    ```powershell
    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
