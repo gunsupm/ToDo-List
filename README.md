@@ -35,7 +35,7 @@ If npm error, try this in Windows PowerShell:
 
 3. Start the development server:
    ```bash
-   npm start
+   npm run dev
 
 ### Back-End Setup (Python Flask)
 1. Clone the repository:
