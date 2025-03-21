@@ -16,9 +16,6 @@ This repository contains the **gh-pages** branch, which hosts the production-rea
 - **Python (Flask)**: Framework for the back-end API.
 - **GitHub Pages**: Used for hosting the front-end of the application.
 
-## Live Demo
-You can access the live demo of the ToDo List app hosted on GitHub Pages here:  
-[Click Here!!!](https://gunsupm.github.io/ToDo/)
 
 ## Installation
 
@@ -32,9 +29,13 @@ You can access the live demo of the ToDo List app hosted on GitHub Pages here:
 2. Install dependencies:
    ```bash
    npm install
+
+If npm error, try this in Windows PowerShell:
+   (Set-ExecutionPolicy RemoteSigned -Scope CurrentUser)
+
 3. Start the development server:
    ```bash
-   npm start
+   npm run dev
 
 ### Back-End Setup (Python Flask)
 1. Clone the repository:
@@ -59,7 +60,7 @@ You can access the live demo of the ToDo List app hosted on GitHub Pages here:
 
 4. Install required dependencies:
    ```bash
-   pip install flask flask-alchemy flask-cors
+   pip install flask flask-sqlalchemy flask-cors
 
 5. Run Flask application:
    ```bash
