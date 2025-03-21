@@ -16,9 +16,6 @@ This repository contains the **gh-pages** branch, which hosts the production-rea
 - **Python (Flask)**: Framework for the back-end API.
 - **GitHub Pages**: Used for hosting the front-end of the application.
 
-## Live Demo
-You can access the live demo of the ToDo List app hosted on GitHub Pages here:  
-[Click Here!!!](https://gunsupm.github.io/ToDo/)
 
 ## Installation
 
