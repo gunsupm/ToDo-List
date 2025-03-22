@@ -77,7 +77,7 @@ You can now interact with the ToDo List application by adding, updating, and del
 
 Project Status
 
-   Front-End: Complete and deployed on GitHub Pages
+   Front-End: Complete *Waiting for Deploy
    
    Back-End: Complete and functional *Waiting for Deploy
 
