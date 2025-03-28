@@ -29,9 +29,11 @@ This repository contains the **gh-pages** branch, which hosts the production-rea
 2. Install dependencies:
    ```bash
    npm install
-
+```
 If npm error, try this in Windows PowerShell:
-   (Set-ExecutionPolicy RemoteSigned -Scope CurrentUser)
+```
+
+   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 3. Start the development server:
    ```bash
