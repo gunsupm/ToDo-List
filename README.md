@@ -1,6 +1,5 @@
 # ToDo List Application
 
-## Overview
 This is a simple ToDo List web application built with **React.js** for the front-end and **Python (Flask)** for the back-end. The application allows users to add, update, and delete tasks with an intuitive and user-friendly interface.
 
 This repository contains the **gh-pages** branch, which hosts the production-ready front-end deployed via GitHub Pages.
